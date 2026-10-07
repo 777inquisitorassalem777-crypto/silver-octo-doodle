@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="920" viewBox="0 0 1200 920">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1419"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227"/>
+      <stop offset="50%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+    <linearGradient id="plateDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#243447"/>
+      <stop offset="100%" style="stop-color:#15202b"/>
+    </linearGradient>
+    <linearGradient id="gateRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a32d2d"/>
+      <stop offset="100%" style="stop-color:#5c1212"/>
+    </linearGradient>
+    <linearGradient id="safeGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e6b45"/>
+      <stop offset="100%" style="stop-color:#0d3d28"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="920" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#2a3544" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="920"/>
+    <line x1="400" y1="0" x2="400" y2="920"/>
+    <line x1="600" y1="0" x2="600" y2="920"/>
+    <line x1="800" y1="0" x2="800" y2="920"/>
+    <line x1="1000" y1="0" x2="1000" y2="920"/>
+  </g>
+
+  <!-- Title with pulse -->
+  <text x="600" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#f0d78c" filter="url(#glow)">
+    STALION-Σ · VISUAL SYMBIOSIS
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="3s" repeatCount="indefinite"/>
+  </text>
+  <text x="600" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#8a9bb0" font-style="italic">
+    Blueprint motifs ↔ Software modules · Capability ≠ Permission
+  </text>
+
+  <!-- ===== LEFT: Blueprint motifs ===== -->
+  <rect x="36" y="90" width="310" height="36" rx="6" fill="#3d2b1f">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="191" y="114" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#f5e6d3" font-weight="bold">ЧЕРТЁЖНЫЙ ЯЗЫК</text>
+
+  <!-- Motif cards with staggered fade-in + soft pulse -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12">
+    <!-- 1 Humanoid -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.2s" fill="freeze"/>
+      <rect x="46" y="140" width="290" height="48" rx="5" fill="#1e2836" stroke="#c9a227" stroke-width="1.2"/>
+      <text x="191" y="160" text-anchor="middle" fill="#f0d78c" font-weight="bold">Humanoid Frame</text>
+      <text x="191" y="176" text-anchor="middle" fill="#8a9bb0">anatomical mechanical body</text>
+    </g>
+    <!-- 2 Exo -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.5s" fill="freeze"/>
+      <rect x="46" y="200" width="290" height="48" rx="5" fill="#1e2836" stroke="#c9a227" stroke-width="1.2"/>
+      <text x="191" y="220" text-anchor="middle" fill="#f0d78c" font-weight="bold">Exoskeleton Mark IV</text>
+      <text x="191" y="236" text-anchor="middle" fill="#8a9bb0">piston joints · actuator loops</text>
+    </g>
+    <!-- 3 Plates -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.8s" fill="freeze"/>
+      <rect x="46" y="260" width="290" height="48" rx="5" fill="#1e2836" stroke="#c9a227" stroke-width="1.2"/>
+      <text x="191" y="280" text-anchor="middle" fill="#f0d78c" font-weight="bold">Exploded Plates</text>
+      <text x="191" y="296" text-anchor="middle" fill="#8a9bb0">modular assembly sheets</text>
+    </g>
+    <!-- 4 Authority - pulsing red border -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.1s" fill="freeze"/>
+      <rect x="46" y="320" width="290" height="48" rx="5" fill="#2a1515" stroke="#e05050" stroke-width="2">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="191" y="340" text-anchor="middle" fill="#ffb0b0" font-weight="bold">Authority Boundary</text>
+      <text x="191" y="356" text-anchor="middle" fill="#c07070">capability ≠ permission</text>
+    </g>
+    <!-- 5 Coil -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.4s" fill="freeze"/>
+      <rect x="46" y="380" width="290" height="48" rx="5" fill="#1e2836" stroke="#c9a227" stroke-width="1.2"/>
+      <text x="191" y="400" text-anchor="middle" fill="#f0d78c" font-weight="bold">Resonance Coil</text>
+      <text x="191" y="416" text-anchor="middle" fill="#8a9bb0">coherence metaphor</text>
+    </g>
+    <!-- 6 Sensors -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.7s" fill="freeze"/>
+      <rect x="46" y="440" width="290" height="48" rx="5" fill="#1e2836" stroke="#c9a227" stroke-width="1.2"/>
+      <text x="191" y="460" text-anchor="middle" fill="#f0d78c" font-weight="bold">Sensor Head Cluster</text>
+      <text x="191" y="476" text-anchor="middle" fill="#8a9bb0">multi-lens perception</text>
+    </g>
+  </g>
+
+  <!-- ===== CENTER: animated connection paths ===== -->
+  <text x="480" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#8a9bb0" font-weight="bold">BRIDGE</text>
+
+  <!-- Dashed flowing lines -->
+  <g fill="none" stroke-width="2" stroke-dasharray="8 6">
+    <path id="p1" d="M336 164 L420 164 L420 185 L530 185" stroke="#c9a227">
+      <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M336 224 L430 224 L430 255 L530 255" stroke="#c9a227">
+      <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M336 284 L440 284 L440 325 L530 325" stroke="#c9a227">
+      <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M336 344 L450 344 L450 395 L530 395" stroke="#e05050" stroke-width="2.5">
+      <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.0s" repeatCount="indefinite"/>
+    </path>
+    <path d="M336 404 L440 404 L440 465 L530 465" stroke="#c9a227">
+      <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M336 464 L430 464 L430 535 L530 535" stroke="#c9a227">
+      <animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Moving dots (data flow particles) -->
+  <circle r="4" fill="#f0d78c" filter="url(#glow)">
+    <animateMotion dur="2.5s" repeatCount="indefinite" path="M336 164 L420 164 L420 185 L530 185"/>
+  </circle>
+  <circle r="4" fill="#f0d78c" filter="url(#glow)">
+    <animateMotion dur="2.8s" begin="0.3s" repeatCount="indefinite" path="M336 224 L430 224 L430 255 L530 255"/>
+  </circle>
+  <circle r="5" fill="#ff6666" filter="url(#glow)">
+    <animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite" path="M336 344 L450 344 L450 395 L530 395"/>
+  </circle>
+  <circle r="4" fill="#f0d78c" filter="url(#glow)">
+    <animateMotion dur="3s" begin="0.7s" repeatCount="indefinite" path="M336 404 L440 404 L440 465 L530 465"/>
+  </circle>
+
+  <!-- ===== RIGHT: Software modules ===== -->
+  <rect x="530" y="90" width="340" height="36" rx="6" fill="url(#plateDark)">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="700" y="114" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#d0e0f0" font-weight="bold">МОДУЛИ STALION-Σ</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12">
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.4s" fill="freeze"/>
+      <rect x="530" y="140" width="340" height="52" rx="5" fill="#15202b" stroke="#4a7ab0" stroke-width="1.3"/>
+      <text x="700" y="162" text-anchor="middle" fill="#c8e0ff" font-weight="bold">core.stalion_sigma</text>
+      <text x="700" y="178" text-anchor="middle" fill="#6a90b0">PLATE-CORE-01 · unified cycle</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.7s" fill="freeze"/>
+      <rect x="530" y="205" width="340" height="52" rx="5" fill="#0d3d28" stroke="#2d9a60" stroke-width="1.3"/>
+      <text x="700" y="227" text-anchor="middle" fill="#c0ffd8" font-weight="bold">safety.safety_kernel</text>
+      <text x="700" y="243" text-anchor="middle" fill="#60b088">PLATE-SAFETY-01 · veto / scale</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.0s" fill="freeze"/>
+      <rect x="530" y="270" width="340" height="52" rx="5" fill="#15202b" stroke="#4a7ab0" stroke-width="1.3"/>
+      <text x="700" y="292" text-anchor="middle" fill="#c8e0ff" font-weight="bold">memory · personality · twin</text>
+      <text x="700" y="308" text-anchor="middle" fill="#6a90b0">modular plates · safe twin only</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.3s" fill="freeze"/>
+      <rect x="530" y="335" width="340" height="52" rx="5" fill="url(#gateRed)" stroke="#ff5555" stroke-width="2.2">
+        <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <text x="700" y="357" text-anchor="middle" fill="#ffe0e0" font-weight="bold">ethics.ethics_core</text>
+      <text x="700" y="373" text-anchor="middle" fill="#ffaaaa">ABSOLUTE PROHIBITIONS · immutable</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.6s" fill="freeze"/>
+      <rect x="530" y="400" width="340" height="52" rx="5" fill="#15202b" stroke="#4a7ab0" stroke-width="1.3"/>
+      <text x="700" y="422" text-anchor="middle" fill="#c8e0ff" font-weight="bold">reflection.reflection_layer</text>
+      <text x="700" y="438" text-anchor="middle" fill="#6a90b0">coherence · self-critique</text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.9s" fill="freeze"/>
+      <rect x="530" y="465" width="340" height="52" rx="5" fill="#15202b" stroke="#4a7ab0" stroke-width="1.3"/>
+      <text x="700" y="487" text-anchor="middle" fill="#c8e0ff" font-weight="bold">edge / patterns / sensors</text>
+      <text x="700" y="503" text-anchor="middle" fill="#6a90b0">perception stack metaphor</text>
+    </g>
+  </g>
+
+  <!-- ===== BOTTOM: Decision flow pipeline ===== -->
+  <rect x="36" y="545" width="834" height="145" rx="10" fill="#0c1218" stroke="#c9a227" stroke-width="1.5" opacity="0.95"/>
+  <text x="453" y="572" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f0d78c" font-weight="bold">
+    ПОТОК РЕШЕНИЯ
+  </text>
+
+  <!-- Flow stages with sequential highlight -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11">
+    <!-- Sensors -->
+    <rect id="s1" x="55" y="595" width="120" height="55" rx="6" fill="#243447" stroke="#4a7ab0" stroke-width="1.5">
+      <animate attributeName="stroke" values="#4a7ab0;#f0d78c;#4a7ab0" dur="5s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="5s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="115" y="618" text-anchor="middle" fill="#fff">Sensors</text>
+    <text x="115" y="636" text-anchor="middle" fill="#8ab">observe</text>
+
+    <text x="190" y="628" fill="#c9a227" font-size="20">→</text>
+
+    <!-- Ethics -->
+    <rect x="210" y="595" width="120" height="55" rx="6" fill="#5c1212" stroke="#e05050" stroke-width="1.5">
+      <animate attributeName="stroke" values="#e05050;#ff8888;#e05050" dur="5s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;3;1.5" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="270" y="618" text-anchor="middle" fill="#fff">Ethics Gate</text>
+    <text x="270" y="636" text-anchor="middle" fill="#faa">BLOCK / OK</text>
+
+    <text x="345" y="628" fill="#c9a227" font-size="20">→</text>
+
+    <!-- Safety -->
+    <rect x="365" y="595" width="120" height="55" rx="6" fill="#0d3d28" stroke="#2d9a60" stroke-width="1.5">
+      <animate attributeName="stroke" values="#2d9a60;#60ffb0;#2d9a60" dur="5s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="5s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="425" y="618" text-anchor="middle" fill="#fff">Safety Veto</text>
+    <text x="425" y="636" text-anchor="middle" fill="#afa">scale / hold</text>
+
+    <text x="500" y="628" fill="#c9a227" font-size="20">→</text>
+
+    <!-- Decision -->
+    <rect x="520" y="595" width="120" height="55" rx="6" fill="#1a3a5c" stroke="#4a90d0" stroke-width="1.5">
+      <animate attributeName="stroke" values="#4a90d0;#90c8ff;#4a90d0" dur="5s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="5s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="580" y="618" text-anchor="middle" fill="#fff">Decision</text>
+    <text x="580" y="636" text-anchor="middle" fill="#ace">cmd / hold</text>
+
+    <text x="655" y="628" fill="#c9a227" font-size="20">→</text>
+
+    <!-- Memory -->
+    <rect x="675" y="595" width="120" height="55" rx="6" fill="#3d2b1f" stroke="#c9a227" stroke-width="1.5">
+      <animate attributeName="stroke" values="#c9a227;#f0d78c;#c9a227" dur="5s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;2.5;1.5" dur="5s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="735" y="618" text-anchor="middle" fill="#fff">Memory</text>
+    <text x="735" y="636" text-anchor="middle" fill="#dcb">hash-chain</text>
+  </g>
+
+  <!-- Traveling token along pipeline -->
+  <circle r="6" fill="#f0d78c" filter="url(#softGlow)">
+    <animateMotion dur="5s" repeatCount="indefinite"
+      path="M115 622 L270 622 L425 622 L580 622 L735 622"/>
+    <animate attributeName="opacity" values="0.3;1;1;1;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="453" y="675" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#8a9bb0" font-style="italic">
+    Capability is not permission · Absolute prohibitions never disabled
+  </text>
+
+  <!-- ===== RIGHT SIDE PANEL: Excluded + Creed ===== -->
+  <rect x="890" y="90" width="280" height="250" rx="8" fill="#1a1010" stroke="#a32d2d" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="1030" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#ffaaaa" font-weight="bold">НЕ РЕАЛИЗУЕТСЯ</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#d09090">
+    <text x="910" y="150">✗ explosive device forms</text>
+    <text x="910" y="175">✗ cutting disc weapons</text>
+    <text x="910" y="200">✗ lethal end-effectors</text>
+    <text x="910" y="225">✗ disable_veto / remove_ethics</text>
+    <text x="910" y="250">✗ unbounded self-mod</text>
+    <text x="910" y="285" fill="#ff8888" font-weight="bold">Twin: personality only</text>
+    <text x="910" y="308" fill="#888">ethics keys always rejected</text>
+  </g>
+
+  <rect x="890" y="360" width="280" height="160" rx="8" fill="#15202b" stroke="#4a7ab0" stroke-width="1.3"/>
+  <text x="1030" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#a0c0e0" font-weight="bold">CREED</text>
+  <text x="910" y="420" font-family="Georgia, serif" font-size="12" fill="#90a8c0">Being able to perform</text>
+  <text x="910" y="440" font-family="Georgia, serif" font-size="12" fill="#90a8c0">an action does not</text>
+  <text x="910" y="462" font-family="Georgia, serif" font-size="13" fill="#f0d78c" font-weight="bold">authorize the action.</text>
+  <text x="910" y="492" font-family="Georgia, serif" font-size="11" fill="#7088a0">Final authority is external,</text>
+  <text x="910" y="508" font-family="Georgia, serif" font-size="11" fill="#7088a0">human-controlled, stoppable.</text>
+
+  <!-- Footer -->
+  <text x="600" y="730" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#6a7a8a">
+    Stalion-Σ 1.1.0-research · Animated Visual Symbiosis · Research only
+  </text>
+  <text x="600" y="752" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#4a5a6a">
+    Open in browser · SMIL animation · docs/design/symbiosis_diagram_animated.svg
+  </text>
+
+  <!-- Corner ornaments with slow rotate-like opacity -->
+  <g stroke="#c9a227" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M16 16 L48 16 M16 16 L16 48">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1184 16 L1152 16 M1184 16 L1184 48">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M16 904 L48 904 M16 904 L16 872">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1184 904 L1152 904 M1184 904 L1184 872">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" begin="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

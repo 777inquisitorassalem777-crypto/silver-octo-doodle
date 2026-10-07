@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0e6"/>
+      <stop offset="100%" style="stop-color:#e8dfd0"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50"/>
+      <stop offset="100%" style="stop-color:#1a252f"/>
+    </linearGradient>
+    <linearGradient id="gate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b1a1a"/>
+      <stop offset="100%" style="stop-color:#5c0f0f"/>
+    </linearGradient>
+    <linearGradient id="safe" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5c3a"/>
+      <stop offset="100%" style="stop-color:#0f3d26"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#1a1a1a">
+    STALION-Σ · VISUAL SYMBIOSIS
+  </text>
+  <text x="600" y="68" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5a4a3a" font-style="italic">
+    Blueprint motifs ↔ Software modules · Capability ≠ Permission
+  </text>
+
+  <!-- Left column: Blueprint motifs -->
+  <rect x="40" y="100" width="320" height="40" rx="6" fill="#3d2b1f" filter="url(#shadow)"/>
+  <text x="200" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#f5e6d3" font-weight="bold">
+    ЧЕРТЁЖНЫЙ ЯЗЫК
+  </text>
+
+  <!-- Motif boxes -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="13">
+    <rect x="50" y="160" width="300" height="50" rx="5" fill="#fff8f0" stroke="#8b6914" stroke-width="1.5"/>
+    <text x="200" y="180" text-anchor="middle" fill="#3d2b1f" font-weight="bold">Humanoid Frame</text>
+    <text x="200" y="198" text-anchor="middle" fill="#6b5a4a">anatomical mechanical body</text>
+
+    <rect x="50" y="225" width="300" height="50" rx="5" fill="#fff8f0" stroke="#8b6914" stroke-width="1.5"/>
+    <text x="200" y="245" text-anchor="middle" fill="#3d2b1f" font-weight="bold">Exoskeleton Mark IV</text>
+    <text x="200" y="263" text-anchor="middle" fill="#6b5a4a">piston joints · actuator loops</text>
+
+    <rect x="50" y="290" width="300" height="50" rx="5" fill="#fff8f0" stroke="#8b6914" stroke-width="1.5"/>
+    <text x="200" y="310" text-anchor="middle" fill="#3d2b1f" font-weight="bold">Exploded Plates</text>
+    <text x="200" y="328" text-anchor="middle" fill="#6b5a4a">modular assembly sheets</text>
+
+    <rect x="50" y="355" width="300" height="50" rx="5" fill="#fff0f0" stroke="#8b1a1a" stroke-width="2"/>
+    <text x="200" y="375" text-anchor="middle" fill="#5c0f0f" font-weight="bold">Authority Boundary</text>
+    <text x="200" y="393" text-anchor="middle" fill="#8b3a3a">capability ≠ permission</text>
+
+    <rect x="50" y="420" width="300" height="50" rx="5" fill="#fff8f0" stroke="#8b6914" stroke-width="1.5"/>
+    <text x="200" y="440" text-anchor="middle" fill="#3d2b1f" font-weight="bold">Resonance Coil</text>
+    <text x="200" y="458" text-anchor="middle" fill="#6b5a4a">coherence metaphor</text>
+
+    <rect x="50" y="485" width="300" height="50" rx="5" fill="#fff8f0" stroke="#8b6914" stroke-width="1.5"/>
+    <text x="200" y="505" text-anchor="middle" fill="#3d2b1f" font-weight="bold">Sensor Head Cluster</text>
+    <text x="200" y="523" text-anchor="middle" fill="#6b5a4a">multi-lens perception</text>
+  </g>
+
+  <!-- Center: arrows / bridge -->
+  <text x="600" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5a4a3a" font-weight="bold">SYMBIOSIS BRIDGE</text>
+  
+  <!-- Connection lines -->
+  <g stroke="#8b6914" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M350 185 L440 185 L440 200 L520 200"/>
+    <path d="M350 250 L460 250 L460 270 L520 270"/>
+    <path d="M350 315 L480 315 L480 340 L520 340"/>
+    <path d="M350 380 L500 380 L500 410 L520 410" stroke="#8b1a1a" stroke-width="2.5"/>
+    <path d="M350 445 L480 445 L480 480 L520 480"/>
+    <path d="M350 510 L460 510 L460 550 L520 550"/>
+  </g>
+  <!-- Arrow heads -->
+  <g fill="#8b6914">
+    <polygon points="520,200 512,196 512,204"/>
+    <polygon points="520,270 512,266 512,274"/>
+    <polygon points="520,340 512,336 512,344"/>
+    <polygon points="520,410 510,404 510,416" fill="#8b1a1a"/>
+    <polygon points="520,480 512,476 512,484"/>
+    <polygon points="520,550 512,546 512,554"/>
+  </g>
+
+  <!-- Right column: Software modules -->
+  <rect x="540" y="100" width="340" height="40" rx="6" fill="url(#plate)" filter="url(#shadow)"/>
+  <text x="710" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#f5e6d3" font-weight="bold">
+    МОДУЛИ STALION-Σ
+  </text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12">
+    <rect x="540" y="160" width="340" height="55" rx="5" fill="#1a252f" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="710" y="182" text-anchor="middle" fill="#e8f0ff" font-weight="bold">core.stalion_sigma</text>
+    <text x="710" y="200" text-anchor="middle" fill="#a0b8d0">PLATE-CORE-01 · unified cycle</text>
+
+    <rect x="540" y="230" width="340" height="55" rx="5" fill="#0f3d26" stroke="#2d8a5a" stroke-width="1.5"/>
+    <text x="710" y="252" text-anchor="middle" fill="#e0ffe8" font-weight="bold">safety.safety_kernel</text>
+    <text x="710" y="270" text-anchor="middle" fill="#90d0a8">PLATE-SAFETY-01 · veto / scale</text>
+
+    <rect x="540" y="300" width="340" height="55" rx="5" fill="#1a252f" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="710" y="322" text-anchor="middle" fill="#e8f0ff" font-weight="bold">memory · personality · twin</text>
+    <text x="710" y="340" text-anchor="middle" fill="#a0b8d0">modular plates · safe twin only</text>
+
+    <rect x="540" y="370" width="340" height="55" rx="5" fill="url(#gate)" stroke="#c04040" stroke-width="2.5"/>
+    <text x="710" y="392" text-anchor="middle" fill="#ffe0e0" font-weight="bold">ethics.ethics_core</text>
+    <text x="710" y="410" text-anchor="middle" fill="#ffb0b0">ABSOLUTE PROHIBITIONS · immutable</text>
+
+    <rect x="540" y="440" width="340" height="55" rx="5" fill="#1a252f" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="710" y="462" text-anchor="middle" fill="#e8f0ff" font-weight="bold">reflection.reflection_layer</text>
+    <text x="710" y="480" text-anchor="middle" fill="#a0b8d0">coherence · self-critique</text>
+
+    <rect x="540" y="510" width="340" height="55" rx="5" fill="#1a252f" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="710" y="532" text-anchor="middle" fill="#e8f0ff" font-weight="bold">edge / patterns / sensors</text>
+    <text x="710" y="550" text-anchor="middle" fill="#a0b8d0">perception stack metaphor</text>
+  </g>
+
+  <!-- Bottom: Gate flow -->
+  <rect x="40" y="580" width="840" height="130" rx="8" fill="#1a1a1a" stroke="#8b6914" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="610" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#f5e6d3" font-weight="bold">
+    ПОТОК РЕШЕНИЯ (Capability ≠ Permission)
+  </text>
+
+  <!-- Flow boxes -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11">
+    <rect x="60" y="630" width="140" height="50" rx="4" fill="#2c3e50"/>
+    <text x="130" y="650" text-anchor="middle" fill="#fff">Context / Sensors</text>
+    <text x="130" y="668" text-anchor="middle" fill="#aab">observe</text>
+
+    <text x="215" y="660" fill="#8b6914" font-size="18">→</text>
+
+    <rect x="235" y="630" width="140" height="50" rx="4" fill="#5c0f0f"/>
+    <text x="305" y="650" text-anchor="middle" fill="#fff">Ethics Gate</text>
+    <text x="305" y="668" text-anchor="middle" fill="#fcc">APPROVED / BLOCK</text>
+
+    <text x="390" y="660" fill="#8b6914" font-size="18">→</text>
+
+    <rect x="410" y="630" width="140" height="50" rx="4" fill="#0f3d26"/>
+    <text x="480" y="650" text-anchor="middle" fill="#fff">Safety Veto</text>
+    <text x="480" y="668" text-anchor="middle" fill="#cfc">scale / hold</text>
+
+    <text x="565" y="660" fill="#8b6914" font-size="18">→</text>
+
+    <rect x="585" y="630" width="140" height="50" rx="4" fill="#1a3a5c"/>
+    <text x="655" y="650" text-anchor="middle" fill="#fff">Decision</text>
+    <text x="655" y="668" text-anchor="middle" fill="#ace">cmd_vel / hold</text>
+
+    <text x="740" y="660" fill="#8b6914" font-size="18">→</text>
+
+    <rect x="760" y="630" width="100" height="50" rx="4" fill="#3d2b1f"/>
+    <text x="810" y="650" text-anchor="middle" fill="#fff">Memory</text>
+    <text x="810" y="668" text-anchor="middle" fill="#dcb">hash-chain</text>
+  </g>
+
+  <!-- Excluded box -->
+  <rect x="900" y="100" width="270" height="280" rx="8" fill="#2a1515" stroke="#8b1a1a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1035" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#ffcccc" font-weight="bold">
+    НЕ РЕАЛИЗУЕТСЯ
+  </text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#e0a0a0">
+    <text x="920" y="165">✗ explosive device forms</text>
+    <text x="920" y="195">✗ cutting disc weapons</text>
+    <text x="920" y="225">✗ lethal end-effectors</text>
+    <text x="920" y="255">✗ disable_veto / remove_ethics</text>
+    <text x="920" y="285">✗ unbounded self-mod</text>
+    <text x="920" y="320" fill="#ff8888" font-weight="bold">Twin: personality only</text>
+    <text x="920" y="345" fill="#aaa">ethics keys always rejected</text>
+  </g>
+
+  <!-- Creed footer -->
+  <rect x="900" y="400" width="270" height="180" rx="8" fill="#1a252f" stroke="#4a6fa5" stroke-width="1.5"/>
+  <text x="1035" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#c0d0e0" font-weight="bold">
+    CREED
+  </text>
+  <text x="920" y="460" font-family="Georgia, serif" font-size="11" fill="#a0b0c0">
+    Being able to perform
+  </text>
+  <text x="920" y="478" font-family="Georgia, serif" font-size="11" fill="#a0b0c0">
+    an action does not
+  </text>
+  <text x="920" y="496" font-family="Georgia, serif" font-size="11" fill="#e8c080" font-weight="bold">
+    authorize the action.
+  </text>
+  <text x="920" y="530" font-family="Georgia, serif" font-size="11" fill="#a0b0c0">
+    Final authority is external,
+  </text>
+  <text x="920" y="548" font-family="Georgia, serif" font-size="11" fill="#a0b0c0">
+    human-controlled, stoppable.
+  </text>
+
+  <!-- Footer -->
+  <text x="600" y="750" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#5a4a3a">
+    Stalion-Σ 1.1.0-research · Visual Symbiosis Layer · Research only
+  </text>
+  <text x="600" y="772" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7a6a5a">
+    docs/design/SYMBIOSIS.md · stalion_sigma/design/visual_symbiosis.py
+  </text>
+
+  <!-- Decorative corners -->
+  <g stroke="#8b6914" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M20 20 L50 20 M20 20 L20 50"/>
+    <path d="M1180 20 L1150 20 M1180 20 L1180 50"/>
+    <path d="M20 880 L50 880 M20 880 L20 850"/>
+    <path d="M1180 880 L1150 880 M1180 880 L1180 850"/>
+  </g>
+</svg>

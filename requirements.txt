@@ -1,0 +1,17 @@
+# Stalion-Σ 1.1.0-research — core (no heavy ML required for base sim)
+# Python >= 3.10 recommended
+
+# Optional API surface
+# fastapi>=0.110
+# uvicorn>=0.27
+
+# Optional vision / RL experiments (not required for kernel)
+# torch
+# stable-baselines3
+# gymnasium
+
+# Dev / tests
+pytest>=7.0
+
+# Poster / video tooling (optional)
+Pillow>=10.0
